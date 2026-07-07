@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Mengisi Data Diri — MMS Kajian{% endblock %}
+
+{% block content %}
+<div class="fullpage-center" style="padding-top: 1rem; padding-bottom: 3rem;">
+    <div class="envelope-card">
+        <div style="text-align: center; position: relative; z-index: 1;">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📩</div>
+            <h2 style="font-size: 1.3rem; color: var(--primary-dark); margin-bottom: 0.25rem;">
+                Kajian Offline MMS
+            </h2>
+
+            <p
+                style="color: var(--accent-gold); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.85rem; margin-bottom: 1rem;">
+                2026
+            </p>
+
+            <h2 style="font-size: 0.9rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 400;">
+                Harap Mengisi Sampai Mendapatkan QR Code Tiket dan Memasuki Group WhatsApp.
+            </h2>
+
+            <p
+                style="color: var(--accent-gold); font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                Pengurus dan Thalibaat MMS
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; margin-bottom: 1rem;">
+                <a href="/form" class="mms-btn mms-btn-primary mms-btn-lg"
+                    style="width: 100%; justify-content: center;">
+                    <i class="fas fa-clipboard-list"></i> DAFTAR
+                </a>
+            </div>
+
+            <p
+                style="color: var(--accent-gold); font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                Umum (Bukan Thalibaat MMS)
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                <a href="/form_umum" class="mms-btn mms-btn-primary mms-btn-lg"
+                    style="width: 100%; justify-content: center;">
+                    <i class="fas fa-clipboard-list"></i> DAFTAR
+                </a>
+
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1.25rem; line-height: 1.5;">
+                    <i class="fas fa-info-circle"></i> Harap mengisi form dengan data yang sebenar-benarnya.
+                </p>
+            </div>
+        </div>
+        {% endblock %}
