@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Mengisi Data Diri — MMS Kajian{% endblock %}
+{% block title %}Get To Know — The Bloom Of Journey MMS 2026{% endblock %}
 
 {% block content %}
-<div class="fullpage-center" style="padding-top: 1rem; padding-bottom: 3rem;">
+<!--!<div class="fullpage-center" style="padding-top: 1rem; padding-bottom: 3rem;">
     <div class="envelope-card">
         <div style="text-align: center; position: relative; z-index: 1;">
             <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📩</div>
@@ -28,7 +28,7 @@
             <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; margin-bottom: 1rem;">
                 <a href="/form" class="mms-btn mms-btn-primary mms-btn-lg"
                     style="width: 100%; justify-content: center;">
-                    <i class="fas fa-clipboard-list"></i> DAFTAR
+                    <i class="fas fa-clipboard-list"></i> How to Join
                 </a>
             </div>
 
@@ -40,12 +40,136 @@
             <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
                 <a href="/form_umum" class="mms-btn mms-btn-primary mms-btn-lg"
                     style="width: 100%; justify-content: center;">
-                    <i class="fas fa-clipboard-list"></i> DAFTAR
+                    <i class="fas fa-clipboard-list"></i> 
                 </a>
 
                 <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1.25rem; line-height: 1.5;">
                     <i class="fas fa-info-circle"></i> Harap mengisi form dengan data yang sebenar-benarnya.
                 </p>
             </div>
+        </div>-->
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+<style>
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 90vh;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .left {
+        padding: 48px;
+    }
+
+    .eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: #888;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .eyebrow::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background: #888;
+    }
+
+    .title {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 1.05;
+        color: #f0ebe4;
+        margin-bottom: 4px;
+        letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 1.05;
+        color: #f0ebe4;
+        margin-bottom: 32px;
+        letter-spacing: -0.02em;
+    }
+
+    .subtitle span {
+        color: #666;
+        font-size: 32px;
+        vertical-align: middle;
+        margin-left: 12px;
+    }
+
+    .btn-row {
+        display: flex;
+        gap: 12px;
+        margin-top: 8px;
+    }
+
+    .btn-primary {
+        padding: 12px 32px;
+        background: #f0ebe4;
+        color: #0a0a0a;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        border: none;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .btn-outline {
+        padding: 12px 32px;
+        background: transparent;
+        color: #f0ebe4;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        border: 0.5px solid #444;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .btn-primary:hover {
+        opacity: 0.85;
+    }
+
+    .btn-outline:hover {
+        background: #1a1a1a;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+</style>
+
+<div class="hero-section">
+    <div class="left">
+        <div class="title">The</div>
+        <div class="subtitle">Bloom Of Journey<span>2026</span></div>
+        <div class="eyebrow">Muslimah Level-Up</div>
+        <div class="btn-row">
+            <button class="btn-primary" onclick="window.location.href='/daftar'">Ticket</button>
+            <button class="btn-outline" onclick="window.location.href='/info'">How To Join</button>
         </div>
-        {% endblock %}
+    </div>
+    <div class="right">
+        <div class="flower-container">
+            <img src="{{ url_for('static', filename='bunga.jpg') }}" class="flower-img" alt="bunga" />
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -50,14 +50,14 @@
                 <div class="nav-links">
                     <a href="/pendaftaran"
                         class="nav-link {% if request.endpoint == 'halaman_depan' %}active{% endif %}">
-                        <i class="fas fa-ticket"></i> About Us
-                    </a>
-                    <a href="/daftar" class="nav-link {% if request.endpoint == 'halaman_daftar' %}active{% endif %}">
-                        <i class="fas fa-ticket"></i> Ticket
+                        <i class="fas fa-address-card"></i> About Us
                     </a>
                     <a href="/umum_daftar"
                         class="nav-link {% if request.endpoint == 'halaman_umum_daftar' %}active{% endif %}">
-                        <i class="fas fa-ticket"></i> How to Join
+                        <i class="fas fa-info-circle"></i> How to Join
+                    </a>
+                    <a href="/daftar" class="nav-link {% if request.endpoint == 'halaman_daftar' %}active{% endif %}">
+                        <i class="fas fa-ticket"></i> Ticket
                     </a>
                     <a href="/scan" class="nav-link {% if request.endpoint == 'scan_qr' %}active{% endif %}">
                         <i class="fas fa-qrcode"></i> Scan QR
@@ -95,7 +95,7 @@
     </main>
 
     <footer class="mms-footer">
-        <p>Made with <span class="flower">𔓘</span> for The Bloom Of Journey</p>
+        <p><span class="flower">𔓘</span>The Bloom Of Journey</p>
     </footer>
 
     {% block scripts %}{% endblock %}
