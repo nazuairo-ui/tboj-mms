@@ -63,7 +63,7 @@
     }
 
     .left {
-        padding: 48px;
+        padding: 150px;
     }
 
     .eyebrow {
@@ -87,7 +87,7 @@
 
     .title {
         font-family: 'Playfair Display', serif;
-        font-size: 56px;
+        font-size: 70px;
         font-weight: 400;
         line-height: 1.05;
         color: #f0ebe4;
@@ -97,7 +97,7 @@
 
     .subtitle {
         font-family: 'Playfair Display', serif;
-        font-size: 56px;
+        font-size: 60px;
         font-weight: 400;
         line-height: 1.05;
         color: #f0ebe4;
@@ -169,6 +169,202 @@
     <div class="right">
         <div class="flower-container">
             <img src="{{ url_for('static', filename='bunga.jpg') }}" class="flower-img" alt="bunga" />
+        </div>
+    </div>
+</div>
+
+<style>
+    .bottom-section {
+        background: #ffffff00;
+        font-family: 'Inter', sans-serif;
+        padding: 75px 80px;
+    }
+
+    .section-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: #aaa;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .section-eyebrow::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background: #aaa;
+    }
+
+    .section-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 48px;
+    }
+
+    .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+
+    .cp-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cp-card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        border: 0.5px solid #ffffff;
+        border-radius: 12px;
+    }
+
+    .cp-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #f0ebe4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        color: #ffffff;
+        flex-shrink: 0;
+    }
+
+    .cp-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .cp-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .cp-role {
+        font-size: 12px;
+        color: #aaa;
+    }
+
+    .cp-contact {
+        font-size: 12px;
+        color: #555;
+        margin-top: 4px;
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-item {
+        border-bottom: 0.5px solid #e5e5e5;
+        padding: 20px 0;
+        cursor: pointer;
+    }
+
+    .faq-item:first-child {
+        border-top: 0.5px solid #e5e5e5;
+    }
+
+    .faq-q {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .faq-q .icon {
+        font-size: 18px;
+        color: #ffffff;
+        transition: transform 0.3s;
+    }
+
+    .faq-a {
+        font-size: 13px;
+        color: #ffffff;
+        line-height: 1.7;
+        margin-top: 12px;
+        display: none;
+    }
+
+    .faq-item.open .faq-a {
+        display: block;
+    }
+
+    .faq-item.open .icon {
+        transform: rotate(45deg);
+    }
+
+    @media (max-width: 768px) {
+        .bottom-section {
+            padding: 48px 24px;
+        }
+
+        .two-col {
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+    }
+</style>
+
+<div class="bottom-section">
+    <div class="section-title">Butuh Bantuan?</div>
+
+    <div class="two-col">
+        <div>
+            <p style="font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:#aaa;margin-bottom:20px;">
+                Contact Person</p>
+            <div class="cp-grid">
+                <div class="cp-card">
+                    <div class="cp-avatar">N</div>
+                    <div class="cp-info">
+                        <span class="cp-name">Naila Nazua</span>
+                        <span class="cp-role">Pendaftaran</span>
+                        <span class="cp-contact">wa.me/62895622999781</span>
+                    </div>
+                </div>
+                <div class="cp-card">
+                    <div class="cp-avatar">A</div>
+                    <div class="cp-info">
+                        <span class="cp-name">Annisa</span>
+                        <span class="cp-role">Koordinator Acara</span>
+                        <span class="cp-contact">wa.me/628xxxxxxxx</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p style="font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:#aaa;margin-bottom:20px;">FAQ
+            </p>
+            <div class="faq-list">
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="faq-q">Di mana lokasi acaranya? <span class="icon">+</span></div>
+                    <div class="faq-a">Menara 165 (Office & Convention Center) Jl. TB Simatupang No.Kav.1, RT.3/RW.3,
+                        Cilandak Tim., Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12560</div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="faq-q">Kapan batas pendaftaran? <span class="icon">+</span></div>
+                    <div class="faq-a">Early Bird 32 Februari 1550</div>
+                    <div class="faq-a">Normal 15 Maret 1550</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
