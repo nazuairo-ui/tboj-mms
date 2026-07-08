@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}MMS Kajian Offline 2026{% endblock %}</title>
-    <meta name="description" content="Sistem Tiket Digital Kajian Offline MMS 2026">
+    <title>{% block title %}The Bloom Of Journey{% endblock %}</title>
+    <meta name="description" content="Ticket Seminar The Bloom Of Journey MMS 2026">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='logo.png') }}">
 
@@ -34,7 +34,7 @@
                     style="text-decoration: none; display: flex !important; flex-direction: column !important; align-items: flex-start !important; line-height: 1.1; flex: none !important; width: fit-content !important; margin-right: auto !important;">
                     <span class="text-top"
                         style="display: block !important; font-weight: bold; color: white !important; text-align: left !important; font-size: 1.2rem;">
-                        Kajian Offline
+                        The Bloom Of Journey
                     </span>
                     <span class="text-bottom"
                         style="display: block !important; font-size: 0.85rem; color: white !important; text-align: left !important; font-weight: normal;">
@@ -50,17 +50,14 @@
                 <div class="nav-links">
                     <a href="/pendaftaran"
                         class="nav-link {% if request.endpoint == 'halaman_depan' %}active{% endif %}">
-                        <i class="fas fa-ticket"></i> Daftar (GForm)
+                        <i class="fas fa-ticket"></i> About Us
                     </a>
                     <a href="/daftar" class="nav-link {% if request.endpoint == 'halaman_daftar' %}active{% endif %}">
-                        <i class="fas fa-ticket"></i> Thalibaat MMS
+                        <i class="fas fa-ticket"></i> Ticket
                     </a>
                     <a href="/umum_daftar"
                         class="nav-link {% if request.endpoint == 'halaman_umum_daftar' %}active{% endif %}">
-                        <i class="fas fa-ticket"></i> Umum
-                    </a>
-                    <a href="/cek" class="nav-link {% if request.endpoint == 'cek_tiket' %}active{% endif %}">
-                        <i class="fas fa-search"></i> Cek Tiket
+                        <i class="fas fa-ticket"></i> How to Join
                     </a>
                     <a href="/scan" class="nav-link {% if request.endpoint == 'scan_qr' %}active{% endif %}">
                         <i class="fas fa-qrcode"></i> Scan QR
@@ -98,7 +95,7 @@
     </main>
 
     <footer class="mms-footer">
-        <p>Made with <span class="heart">♥</span> for Kajian Offline MMS 2026</p>
+        <p>Made with <span class="flower">𔓘</span> for The Bloom Of Journey</p>
     </footer>
 
     {% block scripts %}{% endblock %}

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap");
 
 :root {
-    --primary: #811C70;
-    --primary-dark: #6F2861;
-    --primary-light: #80196D;
+    --primary: #fa92e9;
+    --primary-dark: #fc59cb;
+    --primary-light: #ff6acd;
     --accent-pink: #F2DAE8;
     --accent-gold: #D4A843;
     --accent-gold-light: #F0DCA0;
